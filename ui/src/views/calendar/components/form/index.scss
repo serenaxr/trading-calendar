@@ -1,0 +1,29 @@
+.add-dialog {
+    /deep/ {
+        // .bk-dialog-body {
+        //     overflow-y: auto;
+        //     max-height: 80vh;
+        // }
+        .bk-form-radio {
+            & + .bk-form-radio {
+                margin-left: 30px;
+            }
+        }
+        .bk-form-input, .bk-date-picker-editor {
+            width: 260px;
+        }
+        .bk-button-text {
+            line-height: 1;
+        }
+    }
+    .time-item {
+        display: flex;
+        align-items: center;
+        & + .time-item {
+            margin-top: 10px;
+        }
+        /deep/ .bk-form-content {
+            margin-left: 0 !important;
+        }
+    }
+}
